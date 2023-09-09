@@ -1,4 +1,4 @@
-import Orderbook from "../components/Orderbook";
+import Orderbook from "@/components/Orderbook";
 
 export default function Home() {
   return (
