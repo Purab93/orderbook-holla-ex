@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import { useCallback, useEffect, useState } from 'react';
 import useWebSocket from 'react-use-websocket';
-import OrderBookEntry from './OrderBookEntry';
+import TradeBookEntry from './TradeBookEntry';
 
-const Orderbook = () => {
+const OrderDepthBook = () => {
     const [asks, setAsks] = useState([]);
     const [bids, setBids] = useState([]);
 
@@ -34,7 +34,7 @@ const Orderbook = () => {
             <div className="mt-8">
                 {entries.map(([price, amount], index) => (
                     <div key={isBid ? 'bids-' + index : 'asks-' + index}>
-                        <OrderBookEntry price={price} amount={amount} isBid={isBid} />
+                        <TradeBookEntry price={price} amount={amount} isBid={isBid} />
                     </div>
                 ))}
             </div>
@@ -92,4 +92,4 @@ const Orderbook = () => {
     );
 };
 
-export default Orderbook;
+export default OrderDepthBook;

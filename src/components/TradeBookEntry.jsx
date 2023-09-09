@@ -1,6 +1,6 @@
 import React from 'react';
 
-const OrderBookEntry = ({ price, amount, isBid, className }) => {
+const TradeBookEntry = ({ price, amount, isBid, className }) => {
     const priceClass = isBid ? 'text-tradeRed' : 'text-tradeGreen';
     const amtClass = isBid ? 'bg-tradeRedBg' : 'bg-tradeGreenBg';
     const hoverClass = isBid ? 'hover:bg-tradeRed' : 'hover:bg-tradeGreen';
@@ -35,4 +35,4 @@ const OrderBookEntry = ({ price, amount, isBid, className }) => {
     );
 };
 
-export default OrderBookEntry;
+export default TradeBookEntry;
