@@ -69,7 +69,7 @@ const OrderDepthBook = () => {
 
     return (
         <div className='text-white flex'>
-            <div className="order-book-block bg-tertiaryBg border-2 border-secondaryBg w-[260px] ml-8">
+            <div className="order-book-block bg-tertiaryBg border-2 border-secondaryBg w-[260px]">
                 <div className="order-book-title bg-secondaryBg capitalize px-4 py-1 text-sm font-extrabold grid grid-cols-8">
                     <div>
                         <img 

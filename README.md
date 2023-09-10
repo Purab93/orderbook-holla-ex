@@ -1,6 +1,15 @@
 ## Getting Started
 
-First, run the development server:
+To run the code locally, first, run the command:
+```bash
+npm install
+
+# or
+
+yarn install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
